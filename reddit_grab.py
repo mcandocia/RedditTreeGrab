@@ -1,6 +1,9 @@
 #CREATED BY MAX CANDOCIA
 #MAY 2014
 #THIS WILL SCRAPE A REDDIT PAGE AND THEN WRITE IT TO A READABLE FILE
+#IT CAN ALSO TRACK DIFFERENT USERS AND SUBREDDITS
+#WITH CUSTOMIZED OPTIONS AVAILABLE 
+#(ALTHOUGH NOT FULLY IMPLEMENTED FOR EACH OPTION)
 #different types of imports will be used
 #concatenations are also possible in the future
 
@@ -511,17 +514,7 @@ def check_post_for_comments(post,minwords):
 			return True
 	return False
 
-#-u: overwrite users
-#-t: overwrite threads
-#-r: randomized selection
-#-s: followed by subreddits to scrape
-#-date: followed by time range to analyze
-#-n: followed by numerical limit
-#-f: followed by file containing ids of posts to scrape
-#-mw: followed by minimum number of words
-#-prefix: followed by prefix of filename
-#-tree: followed by integers representing depth_maxima
-#-depth: user comment depth
+#main
 def main(args):
 	bot=praw.Reddit('thread analyzing test by /u/SymphMeta')
 	if args==[]:
@@ -691,16 +684,4 @@ if __name__ == '__main__':
 	main(sys.argv[1:])
 
 	
-#idlist=['23rt24','z1c9z','25hauk','14obcf','180yye','22m5op','1pd095','24zdnn','13vvzd','1cgo6n','1uw05k','18umza','18err8','16oyf4','13xqbr','1j17ir']
-#idlist+=['25gicq','25bupu','25kesk','25ftb7','24m4yw','2558kd','25gl4u','ydtg5','25hm4s','220xfl','24d12b','24hjlx','22gse9']
-#idlist+=['23vf6g','1wj4ec']
-#idlist+=['vw47s','1cjtzx','25jbjx','25kkob','25j861','25iw22','23r1zu','25lgfn']
-#idlist+=['25jawr','25lldd','25kddk']
-#idlist+=['124ej8','1fwfhr','vktow','1gacat']	
-#idlist+=['25j4zb','1fljyt','259gwy','172oqi','y681w','1zwhxf','25mg31','23uq5l','22lv1n','23fgax','1hzb78','1v0zxa','1eviwk','21r2mk','1hv1ut','1xcpe8']
 
-#idlist+=['24rh62']
-#idlist+=['1ursuy','1x5mxx','1xdhq8','25n2oe','25fren','20umlq','25n96t','xmfwg','1gh0fc','1l7skp']
-#idlist+=['1wxxty','25mth6']
-
-#for id in idlist:
