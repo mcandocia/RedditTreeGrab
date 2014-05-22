@@ -4,15 +4,26 @@
 #different types of imports will be used
 #concatenations are also possible in the future
 
-#options
-#-u: overwrite users
-#-t: overwrite threads
-#-r: randomized selection
-#-s: followed by subreddits to scrape
-#-d: followed by time range to analyze
+####options
+#-ou: overwrite users; 1-hour delay before you can do this
+#-ot: overwrite threads; 1-hour delay before you can do this
+#-random: randomized selection
+#-sub: followed by subreddits to scrape
+#-fsub: followed by filename containing subreddits to scrape
+#-date: followed by type of date to analyze (i.e., hour, day, week, month, year, all)
+#-edate: followed by range in days that posts should be drawn from 
 #-n: followed by numerical limit
-#-f: followed by file containing ids of posts to scrape
-#-whirly: test option
+#-u: followed by list of users to scrape
+#-fu: followed by filename of line-separated users to scrape
+#-ux: if -u or -fu is specified, will analyze each thread user is in
+#-name: specify part of the name of the file; THIS IS IMPORTANT
+#-depth: followed by how far back in someone's comment history you should go
+#-type: followed by type of random post to get for subreddits (hot, new, top, rising, etc.); not every option works with every date combination (although some do)
+#-tree: followed by integers representing how far in tree depth you want to go to view comments
+#-mw: followed by minimum words for a comment
+#-fi: followed by file containing ids of posts to scrape
+#-top: for subreddit-based queries, the number following this will get one of the top [this number] posts from that subreddit for the type specified
+
 
 import re
 import os
