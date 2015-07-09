@@ -1,0 +1,5 @@
+dbname = 'rscraper'
+username = 'djmax'
+password = 'password'
+host = 'localhost'
+directory = '/home/max/workspace/rscrape/'

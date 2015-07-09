@@ -1,6 +1,30 @@
 #CREATED BY MAX CANDOCIA
-#MAY 2014
-#UPDATED JUNE 2015
+#Copyright 2014, 2015
+
+# This file is part of RedditTreeGrab
+#
+#    RedditTreeGrab is free software: you can redistribute it and/or modify
+#    it under the terms of the Lesser GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    RedditTreeGrab is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    Lesser GNU General Public License for more details.
+#
+#    You should have received a copy of the Lesser GNU General Public License
+#    along with RedditTreeGrab.  If not, see <http://www.gnu.org/licenses/>
+#    and <http://www.gnu.org/licenses/lgpl.txt>.
+
+
+
+
+
+
+
+
+#UPDATED JULY 2015
 #THIS WILL SCRAPE A REDDIT PAGE AND THEN WRITE IT TO A READABLE FILE
 #SHELVE FILES ARE THE CURRENT IMPLEMENTATION, AS SQL DATABASES
 #MAY NOT BE OPTIMAL DEPENDING ON THE LEVEL OF DETAIL YOU DESIRE
@@ -64,6 +88,7 @@ import random
 import socket
 from socket import AF_INET, SOCK_DGRAM
 
+#default names if none specified
 filename_userdict='user_dictionary_custom04.dat'
 filename_threaddict='thread_dictionary_custom04.dat'
 
