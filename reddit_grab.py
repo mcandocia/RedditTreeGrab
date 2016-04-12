@@ -68,7 +68,7 @@
 
 ##issues with constantly changing threads (which cause errors with infinite recursion);
 ##note: issues with recursion currently fixed
-VERSION = 'JUL 06 2015, 19:26'
+VERSION = 'APR 12 2016, 14:32'
 
 import re
 import os
@@ -862,7 +862,7 @@ def check_post_for_comments(post,minwords):
 
 #main
 def main(args):
-	bot=praw.Reddit('thread analyzing test by /u/SymphMeta')
+	bot=praw.Reddit('thread analyzing test')
 	if args==[]:
 		args=['-random']
 	ropts=rargs(args)
